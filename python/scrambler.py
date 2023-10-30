@@ -10,7 +10,7 @@ if __name__ == '__main__':
         raise SystemExit(f'Usage: {sys.argv[0]} <plaintext>')
     try:
         p = CipherString.from_string(sys.argv[1].upper())
-        k = CipherString.from_string('dungld'.upper())
+        k = CipherString.from_string('andrewld'.upper())
         print(k.encrypt(p))
     except ValueError:
         raise SystemExit('Invalid plaintext - must be alphanumeric')
